@@ -1,14 +1,6 @@
 html {
-    font-family: 
-.roboto-<uniquifier> {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family:  Roberto,Helvetica, Arial, sans-serif;
 }
-    Helvetica, Arial, sans-serif;
 
     body { padding: 3rem; }
 *:where(:not(:first-child)) { margin-block-start: 1em; }
