@@ -1,6 +1,7 @@
 html {
     font-family: Helvetica, Arial, sans-serif;
+
+    body { padding: 3rem; }
+*:where(:not(:first-child)) { margin-block-start: 1em; }
 }
 
-body { padding: 3rem; }
-*:where(:not(:first-child)) { margin-block-start: 1em; }
