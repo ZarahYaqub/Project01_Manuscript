@@ -1,19 +1,20 @@
 html {
+    *:where(:not(:first-child)) { margin-block-start: 1em; }
     text-wrap: pretty;
     
     font-family: 
         "Roboto",Helvetica, Arial, sans-serif;
     
-    background-color: beige;
+    background-color: white;
     
-    *:where(:not(:first-child)) { margin-block-start: 1em; }
+    
 
     .emailsubject {
         display: flex;
         /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
         width: auto;
         padding: 50px, 50px;
-        align-items: center;
+        align-items: left;
         gap: 10px;
         background-color: #F2F2F2;
     }
@@ -50,6 +51,8 @@ line-height: normal;
     line-height: normal;
     text-decoration-line: underline;
     }
+
+
 
 }
 
