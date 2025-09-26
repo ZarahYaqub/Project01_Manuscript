@@ -3,6 +3,8 @@ html {
     
     font-family: 
         "Roboto",Helvetica, Arial, sans-serif;
+    font font-weight:normal;
+}
     
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
@@ -31,6 +33,13 @@ html {
         border-bottom: 1px solid #000;
         border-top: 1px solid #000;
         background: #FFF;
-
- 
 }
+
+.h3
+{font-weight: bold;}
+
+.footer
+{
+
+}
+
