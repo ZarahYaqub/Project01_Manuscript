@@ -6,10 +6,7 @@ html {
     
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
-    background-color: aliceblue;
-
-    .emailsubject 
-    {
+    .emailsubject {
         display: flex;
         /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
         width: 1280px;
@@ -19,8 +16,7 @@ html {
         background-color: #F2F2F2;
     }
 
-  .table
-  {
+  .table {
        
         width: flex;
         align-items: left;
@@ -31,9 +27,9 @@ html {
         border-bottom: 1px solid #000;
         border-top: 1px solid #000;
         background: #FFF;
-}
+    }
 
-h3 {
+    h3 {
     color: #000;
 font-family: "Roboto"
 font-size: 20px;
@@ -47,6 +43,7 @@ line-height: normal;
     color: rgb(38, 29, 204); 
     text-decoration-line: underline;
     }
+    
 }
 
 
