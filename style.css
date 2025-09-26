@@ -7,22 +7,6 @@ html {
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
     background-color: aliceblue;
-    
-    /*links*/
-    .href
-    {
-     color: #120aff;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: auto;   
-    }
 
     .emailsubject 
     {
@@ -57,7 +41,12 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-
+    /*links*/
+    .href
+    {
+    color: rgb(38, 29, 204); 
+    text-decoration-line: underline;
+    }
 }
 
 
