@@ -4,4 +4,9 @@ html {
     
 *:where(:not(:first-child)) { margin-block-start: 1em; }
 
+th{font-weight: bold;}
+
+
+
+
 }
