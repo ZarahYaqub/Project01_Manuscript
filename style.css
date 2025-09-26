@@ -4,6 +4,8 @@ html {
     font-family: 
         "Roboto",Helvetica, Arial, sans-serif;
     
+    background-color: beige;
+    
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
     .emailsubject {
