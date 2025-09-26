@@ -5,7 +5,7 @@ html {
  text-wrap: pretty;
 
 
-    body { padding: 3rem; }
+    
 *:where(:not(:first-child)) { margin-block-start: 1em; }
 
 }
