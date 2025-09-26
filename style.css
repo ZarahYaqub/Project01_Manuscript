@@ -14,14 +14,14 @@ html {
      color: #120aff;
 font-size: 20px;
 font-style: normal;
-font-weight: 300;
+font-weight: 500;
 line-height: normal;
 text-decoration-line: underline;
 text-decoration-style: solid;
 text-decoration-skip-ink: auto;
 text-decoration-thickness: auto;
 text-underline-offset: auto;
-text-underline-position: from-font;   
+text-underline-position: auto;   
     }
 
     .emailsubject 
