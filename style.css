@@ -19,11 +19,10 @@ html {
 
   .table
   {
-        display: flex;
-        width: 1280px;
-        padding: 30px 50px;
+       
+        width: flex;
         align-items: left;
-        gap: 10px;
+        gap: 5px;
         
         /* border style */
 
