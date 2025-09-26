@@ -1,59 +1,54 @@
 html {
+    /* base */
     *:where(:not(:first-child)) { margin-block-start: 1em; }
     text-wrap: pretty;
     
-    font-family: 
-        "Roboto",Helvetica, Arial, sans-serif;
+    font-family: "Roboto",Helvetica, Arial, sans-serif;
     
     background-color: white;
-    
-    
+    padding-left: 50px;
+    padding-right: 10px;
 
-    .emailsubject {
-        display: flex;
-        /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
-        width: auto;
-        padding: 50px, 50px;
-        align-items: left;
-        gap: 10px;
-        background-color: #F2F2F2;
-    }
+}
 
-    /* To & Cc */
-  .table {
-        width: flex;
-        align-items: left;
-        gap: 5px;
-        
-        /* border style */
-        border-bottom: 1px solid black;
-        border-top: 1px solid black;
-        background: white;
-    }
- 
-    /* questions */
-    h3 {
-    color: #000;
+.emailsubject {
+    display: flex;
+    /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+    width: auto;
+    padding: 50px, 50px;
+    align-items: left;
+    gap: 10px;
+    background-color: #F2F2F2;
+}
+
+/* To & Cc */
+
+.firstemail{
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+/* questions */
+h3 {
+color: #000;
 font-family: "Roboto";
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-    /* links */
-    .href
-    {
-     color: #1531ff;
-    font-family: "Roboto";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-decoration-line: underline;
-    }
 
-
-
+/* links */
+.href
+{
+    color: #1531ff;
+font-family: "Roboto";
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-decoration-line: underline;
 }
+
 
 
