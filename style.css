@@ -11,11 +11,13 @@ html {
 
 }
 
+
+/* Email subject */
 .emailsubject {
     display: flex;
     /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
     width: auto;
-    padding: 50px, 50px;
+    padding: 500px, 500px;
     align-items: left;
     gap: 10px;
     background-color: #f2f2f2a8;
