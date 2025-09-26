@@ -11,8 +11,8 @@ html {
     .emailsubject {
         display: flex;
         /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
-        width:max-content
-        padding: 30px 50px;
+        width: auto;
+        padding: 50px, 50px;
         align-items: center;
         gap: 10px;
         background-color: #F2F2F2;
