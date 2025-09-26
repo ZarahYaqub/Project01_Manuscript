@@ -6,7 +6,9 @@ html {
     
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
-th{font-weight: bold;
+th{
+    padding-left: ;
+    font-weight: bold;
     color: black;
     
 }
