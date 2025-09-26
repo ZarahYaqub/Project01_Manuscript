@@ -16,18 +16,19 @@ html {
         background-color: #F2F2F2;
     }
 
+    /* To & Cc */
   .table {
         width: flex;
         align-items: left;
         gap: 5px;
         
         /* border style */
-
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
-        background: #FFF;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        background: white;
     }
-
+ 
+    /* questions */
     h3 {
     color: #000;
 font-family: "Roboto"
@@ -36,10 +37,15 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-    /*links*/
+    /* links */
     .href
     {
-    color: rgb(38, 29, 204); 
+         color: #1531ff;
+font-family: "Roboto"
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
     text-decoration-line: underline;
     }
 
