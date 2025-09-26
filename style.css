@@ -6,6 +6,8 @@ html {
     
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
+    background-color: aliceblue;
+
     .emailsubject 
     {
         display: flex;
@@ -30,6 +32,5 @@ html {
         border-top: 1px solid #000;
         background: #FFF;
 
-  }
-
+ 
 }
