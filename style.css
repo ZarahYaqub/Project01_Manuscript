@@ -35,7 +35,12 @@ html {
 }
 
 h3 {
-    font-weight: bold;
+    color: #000;
+font-family: "Roboto"
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 
