@@ -6,7 +6,12 @@ html {
     
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
-th{font-weight: bold;}
+th{font-weight: bold;
+    color: black;
+    
+}
+a {text-underline-position: auto;}
+h3{font-weight: bold;}
 
 
 
