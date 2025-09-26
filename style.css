@@ -9,6 +9,7 @@ html {
     .emailsubject 
     {
         display: flex;
+        /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
         width: 1280px;
         padding: 30px 50px;
         align-items: center;
@@ -16,18 +17,20 @@ html {
         background-color: #F2F2F2;
     }
 
-  
+  .table
+  {
+        display: flex;
+        width: 1280px;
+        padding: 30px 50px;
+        align-items: left;
+        gap: 10px;
+        
+        /* border style */
 
-th{
-    padding-left: 80px;
-    font-weight: bold;
-    color: black;
-    
-}
-a {text-underline-position: auto;}
-h3{font-weight: bold;}
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+        background: #FFF;
 
-
-
+  }
 
 }
