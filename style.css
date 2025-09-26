@@ -42,12 +42,12 @@ line-height: normal;
     /* links */
     .href
     {
-         color: #1531ff;
-font-family: "Roboto"
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+     color: #1531ff;
+    font-family: "Roboto"
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
     text-decoration-line: underline;
     }
 
