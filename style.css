@@ -8,13 +8,4 @@ html {
     body { padding: 3rem; }
 *:where(:not(:first-child)) { margin-block-start: 1em; }
 
-display: flex;
-width: 1280px;
-padding: 30px 50px;
-align-items: center;
-gap: 10px;
-
-background: #F2F2F2;
-
-footer 
 }
