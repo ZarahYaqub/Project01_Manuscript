@@ -7,6 +7,22 @@ html {
     *:where(:not(:first-child)) { margin-block-start: 1em; }
 
     background-color: aliceblue;
+    
+    /*links*/
+    .href
+    {
+     color: #120aff;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;   
+    }
 
     .emailsubject 
     {
