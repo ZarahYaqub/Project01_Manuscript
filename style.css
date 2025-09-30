@@ -17,7 +17,8 @@ html {
     display: flex;
     /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
     width: auto;
-    padding: 500px, 500px;
+    margin: 1em;
+    padding: 50px, 50px;
     align-items: left;
     gap: 10px;
     background-color: #f2f2f2a8;
