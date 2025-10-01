@@ -1,6 +1,7 @@
 html {
     /* base */
     *:where(:not(:first-child)) { margin-block-start: 1em; }
+    margin: 0;
     text-wrap: pretty;
     
     font-family: "Roboto",Helvetica, Arial, sans-serif;
@@ -16,9 +17,9 @@ html {
 .emailsubject {
     display: flex;
     /* display - https://developer.mozilla.org/en-US/docs/Web/CSS/display */
-    width: auto;
+    width: 100%;
     margin: 1em;
-    padding: 50px, 50px;
+    padding: 100px;
     align-items: left;
     gap: 10px;
     background-color: #f2f2f2a8;
