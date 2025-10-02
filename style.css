@@ -9,58 +9,70 @@ html {
   line-height: 200%;
 }
 
+.contact-info div {
+    border-bottom: 1px solid black;
+    display: flex;
+width: flex;
+padding: .8rem .95rem;
+align-items: left;
+gap: 0.5rem;
+}
+
 /* Response section */
 .response {
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-left: 5rem;
     width: 60rem;
-
 }
 
 /* Reading section */
 .reading {
-    padding-top: 2rem;
-    padding-left: 5rem;
+    margin-top: 8rem;
+    padding-left: 2.5rem;
+    margin-left: 5rem;
     width: 60rem;
-    border-left: 1rem #000;
+    border-left: .2rem solid #000;
 }
+
 /* Navigation */
-.nav {
-  position: sticky;
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky */
-  /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
-  top: 0;  /* <--DO NOT DELETE */
-  background: #00007E;
-  padding: .5rem;
-  padding-left: 2rem;
-  text-align: left;
-  
-}
+    .nav {
+    position: sticky;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky */
+    /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+    top: 0;  /* <--DO NOT DELETE, makes it stick to the top of page */
+    background: #00007E;
+    padding: .5rem;
+    padding-left: 2rem;
+    text-align: left;
+    }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-align-items: center;
-gap: 3.125rem;
-  margin: 0;
-  padding: 0;
-}
+    .nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+    margin: 0;
+    padding: 0;
+    }
 
-.nav li {
-  display: inline-block;
-  margin: 0rem;
-}
+    .nav li {
+    display: inline-block;
+    margin: 0rem;
+    }
 
-.nav a {
-  color: #FFF;
-  text-decoration: underline;
-  font-family: "Silkscreen", sans-serif;
-  font-size: 20px;
-}
+    .nav a {
+    color: #FFF;
+    text-decoration: underline;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 20px;
+    
+    }
 
-.nav a:hover {
-  text-decoration: none;
-}
+    .nav a:hover {
+    text-decoration: none;
+    transition: 0.25s;
+    cursor: pointer;
+    }
 
 /* Contact info */
 .contact-info {
@@ -68,6 +80,7 @@ gap: 3.125rem;
   padding-left: 5rem;
 }
 
+/* Text */
 /* Bold text */
 b {
   color: #000;
@@ -75,6 +88,11 @@ b {
   font-size: 1em;
   font-weight: bolder;
 }
+hgroup{
+    padding-top: 2.5rem;
+}
+
+/* links */
 
 /* Headings */
 h2 {
@@ -83,6 +101,8 @@ h2 {
   font-size: 2.25rem;
   font-weight: 700;
   letter-spacing: -0.1125rem;
+  padding: 1rem;
+ 
 }
 
 h3 {
@@ -90,6 +110,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
+  padding-bottom: .5rem;
 }
 
 /* Quotes */
@@ -98,17 +119,25 @@ h3 {
   font-family: "Silkscreen", sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  line-height: 117%;
+  line-height: 160%;
+  padding-top: 2rem;
+  letter-spacing: -0.3rem;
 }
 
 .quote2 {
-  color: #000;
+   color: #000;
   font-family: "Silkscreen", sans-serif;
   font-size: 3rem;
   font-weight: 400;
-  line-height: 117%;
+  line-height: 160%;
+  padding-top: 2rem;
+  letter-spacing: -0.3rem;
 }
-
+.highlight {
+    letter-spacing: -0.4rem
+    padding: .25rem;
+    background-color: rgba(70, 255, 116, 0.583);
+}
 /* quotation marks */
 .quotes {
   color: #000;
@@ -117,33 +146,54 @@ h3 {
   font-weight: 400;
 }
 
-/* button */
-.button {
- height: 1rem;
- display: inline-flex;
-padding: 1.5625rem 3.125rem;
-justify-content: center;
-gap: 0.625rem;
- align-items: center;
-
-background-color: #d3d3d3;
-color: #000;
-text-align: center;
-font-family: "Silkscreen";
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-border: 3px solid black;
-
-
-box-shadow: 5px 5px black;
+.emailfooter {
+    line-height: 1.5rem;
+    padding-top: 3rem;
 
 }
 
-.button:hover {
-    background-color: #5c5c5c;
-    box-shadow: 0px 0px;
+
+/* button container */
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+
+}
+
+/* button style */
+.button a {
+  display: inline-block;
+  padding: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #FEF9F5;
+  color: #000;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border: 3px solid #000;
+  box-shadow: 5px 5px #000;
+  text-align: center;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+/* hover effect */
+.button a:hover {
+  background-color: #5c5c5c;
+  color: #fff;
+  box-shadow: none;
+  cursor: pointer;
+}
+/* .emailfooter */
+
+.Sincerely{
+     font-style: italic;
+}
+
+.link {
+    text-decoration: underline
 }
 
 /* footer */
@@ -154,7 +204,7 @@ footer {
   font-style: italic;
   font-weight: .5rem;
   line-height: 200%;
-  text-align: center;     /* centers text */
-  padding: .25rem 1rem;   /* space inside footer */
-  margin-top: 1rem;       /* separates it from page content */
+  text-align: center;
+  padding: .25rem 1rem;
+  margin-top: 1rem;
 }
