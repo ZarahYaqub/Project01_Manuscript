@@ -5,11 +5,15 @@ background-color: #d5d5d5;
     
 color: #000;
 font-family: "Roborto","Helvetica Neue","Arial","san-serif";
-font-size: 1em;
+font-size: 150%;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+line-height: 200%;
 
+
+.response {
+    position: sticky;
+}
 
 /* navigation */
 .nav
@@ -22,6 +26,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: -0.6px;
+
 text-decoration-line: underline;
 text-decoration-style: solid;
 text-decoration-skip-ink: auto;
@@ -29,16 +34,33 @@ text-decoration-thickness: auto;
 text-underline-offset: auto;
 text-underline-position: from-font;
 
-display: flex;
-width: max-width;
-justify-content: space-between;
-align-items: center;
-border-bottom: 1px solid #FFF;
+
+/* border-bottom: 1px solid #FFF; */
 background: #00007E;
+li {display: inline-block;
+    inline-size: 12rem;
+	margin-block-start: 1rem;
+	padding: 1rem;
+	text-align: center;
+	white-space: pre;
+}
 }
 
+.contact-info
+border-bottom: 1px solid #000;
+
+/* Type */
+b
+{
+color: #000;
+font-family: "Roborto","Helvetica Neue","Arial","san-serif";
+font-size: 1em;
+font-style: normal;
+font-weight: bolder;
+line-height: normal;    
+}
 /* Headings */
-.h2 {
+h2 {
 color: #000;
 font-family: Silkscreen;
 font-size: 2.25rem;
@@ -48,7 +70,7 @@ line-height: normal;
 letter-spacing: -0.1125rem;
 }
 
-.h3
+h3
 {
 color: #000;
 font-family: "Helvetica Neue";
@@ -79,6 +101,14 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: -0.2rem;
 }
+
+.quotes
+{color: #000;
+font-family: "iceberg";
+font-size: 1em;
+font-style: normal;
+font-weight: 400;
+line-height: normal;}
     
 }
 
