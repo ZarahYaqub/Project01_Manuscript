@@ -1,114 +1,160 @@
 html {
+  /* base */
+  background-color: #d5d5d5;
+  color: #000;
+  font-family: "Roboto","Helvetica Neue","Arial","sans-serif";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+}
 
-    /* base */
-background-color: #d5d5d5;
-    
-color: #000;
-font-family: "Roborto","Helvetica Neue","Arial","san-serif";
-font-size: 150%;
-font-style: normal;
-font-weight: 400;
-line-height: 200%;
-
-
+/* Response section */
 .response {
-    position: sticky;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    width: 60rem;
+
 }
 
-/* navigation */
-.nav
-{
-color: #FFF;
-
-font-family: Silkscreen;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.6px;
-
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
-text-decoration-thickness: auto;
-text-underline-offset: auto;
-text-underline-position: from-font;
-
-
-/* border-bottom: 1px solid #FFF; */
-background: #00007E;
-li {display: inline-block;
-    inline-size: 12rem;
-	margin-block-start: 1rem;
-	padding: 1rem;
-	text-align: center;
-	white-space: pre;
+/* Reading section */
+.reading {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    width: 60rem;
+    border-left: 1rem #000;
 }
+/* Navigation */
+.nav {
+  position: sticky;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky */
+  /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+  top: 0;  /* <--DO NOT DELETE */
+  background: #00007E;
+  padding: .5rem;
+  padding-left: 2rem;
+  text-align: left;
+  
 }
 
-.contact-info
-border-bottom: 1px solid #000;
-
-/* Type */
-b
-{
-color: #000;
-font-family: "Roborto","Helvetica Neue","Arial","san-serif";
-font-size: 1em;
-font-style: normal;
-font-weight: bolder;
-line-height: normal;    
+.nav ul {
+  list-style: none;
+  display: flex;
+align-items: center;
+gap: 3.125rem;
+  margin: 0;
+  padding: 0;
 }
+
+.nav li {
+  display: inline-block;
+  margin: 0rem;
+}
+
+.nav a {
+  color: #FFF;
+  text-decoration: underline;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  text-decoration: none;
+}
+
+/* Contact info */
+.contact-info {
+  border-bottom: 1px solid #000;
+  padding-left: 5rem;
+}
+
+/* Bold text */
+b {
+  color: #000;
+  font-family: "Roboto","Helvetica Neue","Arial","sans-serif";
+  font-size: 1em;
+  font-weight: bolder;
+}
+
 /* Headings */
 h2 {
-color: #000;
-font-family: Silkscreen;
-font-size: 2.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -0.1125rem;
+  color: #000;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.1125rem;
 }
 
-h3
-{
-color: #000;
-font-family: "Helvetica Neue";
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+h3 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 /* Quotes */
-.quote1
-{
-color: #000;
-font-family: Silkscreen;
-font-size: 4rem;
-font-style: normal;
-font-weight: 400;
-line-height: 117.129%;
+.quote1 {
+  color: #000;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 117%;
 }
 
-.quote2
-{
-    color: #000;
-font-family: Silkscreen;
-font-size: 4rem;
+.quote2 {
+  color: #000;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 117%;
+}
+
+/* quotation marks */
+.quotes {
+  color: #000;
+  font-family: "Iceberg", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* button */
+.button {
+ height: 1rem;
+ display: inline-flex;
+padding: 1.5625rem 3.125rem;
+justify-content: center;
+gap: 0.625rem;
+ align-items: center;
+
+background-color: #d3d3d3;
+color: #000;
+text-align: center;
+font-family: "Silkscreen";
+font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-letter-spacing: -0.2rem;
+border: 3px solid black;
+
+
+box-shadow: 5px 5px black;
+
 }
 
-.quotes
-{color: #000;
-font-family: "iceberg";
-font-size: 1em;
-font-style: normal;
-font-weight: 400;
-line-height: normal;}
-    
+.button:hover {
+    background-color: #5c5c5c;
+    box-shadow: 0px 0px;
 }
 
+/* footer */
+footer {
+  background-color: #b6b6b6;
+  color: #000000;
+  font-size: .75rem;
+  font-style: italic;
+  font-weight: .5rem;
+  line-height: 200%;
+  text-align: center;     /* centers text */
+  padding: .25rem 1rem;   /* space inside footer */
+  margin-top: 1rem;       /* separates it from page content */
+}
