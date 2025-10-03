@@ -54,8 +54,6 @@ html {
     }
   
     /* emailheader */
-
-/* Contact info */
 .contact-info {
   border-bottom: 1px solid #000;
 }
@@ -66,7 +64,6 @@ padding: 1rem 3rem;
 align-items: left;
 /* gap: 4rem; */
 }
-
 
 /* Response section */
 .response {
@@ -79,6 +76,8 @@ align-items: left;
 margin-top: 1rem;
     }
 }
+
+
 
 /* Reading section */
 .reading {
@@ -105,7 +104,7 @@ p{
     transform: translate(.005rem);    /* <---https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
 
 
-    /* Bold text */
+/* Bold text */
     b {
   color: #000;
   font-family: "Roboto","Helvetica Neue","Arial","sans-serif";
@@ -117,7 +116,11 @@ hgroup{
 }
 }
 
-
+/* callout */
+.callout {
+    font-weight: bold;
+    background-color: rgba(70, 255, 116, 0.583);
+}
 
 /* links */
 p a {
@@ -134,7 +137,6 @@ p a {
     transition: 0.25s;
     cursor: pointer;
        }
-
 
 /* Headings */
 h2 {
@@ -175,7 +177,8 @@ h3 {
   margin-top: 1rem;
   letter-spacing: -0.3rem;
 }
-.highlight {
+
+em.highlight {
     background-color: rgba(70, 255, 116, 0.583);
 }
 
@@ -193,6 +196,9 @@ h3 {
     padding-top: 1.5rem;
     margin-bottom: 2rem;
 
+.italic{
+     font-style: italic;
+}
 }
 
 
@@ -229,11 +235,6 @@ h3 {
 }
 }
 
-/* .emailfooter */
-
-.italic{
-     font-style: italic;
-}
 
 /* footer */
 footer {
