@@ -7,7 +7,7 @@ Link to [Project Description](https://typography-interaction-2526.github.io/proj
 [Mismatch: How Inclusion Shapes Design](https://www.amazon.com/Mismatch-Inclusion-Simplicity-Technology-Business/dp/0262038889/ref=as_li_ss_tl?crid=PT6KC6YHXYCH&keywords=mismatched+kat+holmes&qid=1558021593&s=gateway&sprefix=mismatched+ka,aps,128&sr=8-2-fkmrnull&linkCode=sl1&tag=jarrettfuller-20&linkId=943c432127228f8a462b9271aff2027d&language=en_US)
 By [Kat Holmes](https://www.linkedin.com/in/katholmes/)
 
-the reading follows Kat Holmes as she discoivers and shares the secrets and coversations around inclusion in design, this section in paticular discusses ways in which inclucivity in design can be improved simpy through bringing in dierse perspctives in the design process.
+the reading follows Kat Holmes as she discoivers and shares the secrets and coversations around inclusion in design, this section in paticular discusses ways in which inclucivity in design can be improved simpy through bringing in diverse perspctives in the design process.
  
 ### Process
 Link to [Sketches](https://www.figma.com/design/iSSaMcdVsYeC0IZU5nuRFF/Zarah?node-id=3-2&t=Uu1KrKu1WH3FMs7P-1)
