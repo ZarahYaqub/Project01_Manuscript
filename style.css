@@ -1,250 +1,29 @@
-html {
-  /* base */
-  background-color: #d5d5d5;
-  color: #000000;
-  font-family: "Roboto","Helvetica Neue","Arial","sans-serif";
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 200%;
-}
-/* Navigation */
-    .nav {
-    position: sticky;
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky */
-    /* https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
-    z-index: 1000; /* <----https://stackoverflow.com/questions/65475458/why-the-website-content-is-displaying-over-the-navbar-when-scrolling */
-    top: 0;  /* <--DO NOT DELETE, makes it stick to the top of page */
-    background-color: #00007e;
-    opacity:100% ;
-    padding: .5rem;
-    padding-left: 2rem;
-    text-align: left;
-    }
 
-    .nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 3.125rem;
-    margin: 0;
-    padding: 0;
-    }
 
-    .nav li {
-    display: inline-block;
-    margin: 0rem;
-    }
 
-    .nav a {
-    color: #ffffff;
-    text-decoration: underline;
-    text-underline-offset: .25rem;
-    font-family: "Silkscreen", sans-serif;
-    font-size: 20px;
-    
-    }
+/* ------------------------VARIABLES */
+--black: #0A0A0A;
+--white: #FAFAFA;
 
-    .nav a:hover {
-      color: #fff;
-      background-color: #00007e;
-    text-decoration: none;
-    transition: 0.25s;
-    cursor: pointer;
-    }
-  
-    /* emailheader */
-.contact-info {
-  border-bottom: 1px solid #000;
-}
-.label {
-    border-block: 1px solid black;
-width: flex;
-padding: 1rem 3rem;
-align-items: left;
-/* gap: 4rem; */
+/* SECONDARY COLORS*/
+--purple: #5704EB;
+
+
+/* FONT SIZE */
+--display: 2.25rem;
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 }
 
-/* Response section */
-.response {
-  /* background-color: #fff; */
-  padding-left: 5rem;
-    padding-top: 5rem;
-    width: 60rem;
-    
-    p{
-margin-top: 1rem;
-    }
+@font-face {
+    font-family: ;
+    src: url();
 }
 
-
-
-/* Reading section */
-.reading {
-  margin-top: 10rem;
-    padding-top: 5rem;
-    margin-left: 2.5rem;
-    width: 60rem;
-    
-      p{
-margin-top: 1rem;
-    }
-    
-}
-.line{
-  padding-left: 2.5rem;
-  margin-left: 5rem;
-  border-left: .2rem solid #000;
-}
-
-
-
-/* Text */
-p{
-    transform: translate(.005rem);    /* <---https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate */
-
-
-/* Bold text */
-    b {
-  color: #000;
-  font-family: "Roboto","Helvetica Neue","Arial","sans-serif";
-  font-size: 1em;
-  font-weight: bolder;
-}
-hgroup{
-    padding-top: 3.5rem;
-}
-}
-
-/* callout */
-.callout {
-    font-weight: bold;
-    background-color: rgba(70, 255, 116, 0.583);
-}
-
-/* links */
-p a {
-    color: #000000;
-    text-decoration: underline;
-    text-underline-offset: .25rem;
-    font-family: "Roboto","Helvetica Neue","Arial","sans-serif";
-    font-size: 20px;  
-    }
-
-       a:hover {
-    text-decoration: none;
-    background-color: rgba(70, 255, 116, 0.583);
-    transition: 0.25s;
-    cursor: pointer;
-       }
-
-/* Headings */
-h2 {
-  color: #000;
-  font-family: "Silkscreen", sans-serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  letter-spacing: -0.1125rem;
-  padding-bottom: 1rem;
- 
-}
-
-h3 {
-  color: #000;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  padding-bottom: .5rem;
-}
-
-/* Quotes */
-.quote1 {
-  color: #000;
-  font-family: "Silkscreen", sans-serif;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 140%;
-  margin-top: 1rem;
-  letter-spacing: -0.3rem;
-}
-
-.quote2 {
-   color: #000;
-  font-family: "Silkscreen", sans-serif;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 140%;
-  margin-top: 1rem;
-  letter-spacing: -0.3rem;
-}
-
-em.highlight {
-    background-color: rgba(70, 255, 116, 0.583);
-}
-
-/* quotation marks */
-.quotes {
-  color: #000;
-  font-family: "Iceberg", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-}
-
-/* emailfooter */
-.emailfooter {
-    line-height: .9em;
-    padding-top: 1.5rem;
-    margin-bottom: 2rem;
-
-.italic{
-     font-style: italic;
-}
-}
-
-
-/* button */
-.button {
-  display: flex;
-  justify-content: center;
-  margin: 5rem;
-
-
-  /* button decoration */
-  a {
-  display: inline-block;
-  padding: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background: #FEF9F5;
-  color: #000;
-  font-family: "Silkscreen", sans-serif;
-  font-size: 1.25rem;
-  font-weight: 400;
-  border: 3px solid #000;
-  box-shadow: 5px 5px #000;
-  text-align: center;
-  transition: 0.25s;
-  cursor: pointer;
-}
-/* button hover */
- a:hover {
-  background-color: #5c5c5c;
-  color: #fff;
-  box-shadow: none;
-  cursor: pointer;
-}
-}
-
-
-/* footer */
-footer {
-  background-color: #b6b6b6;
-  color: #000000;
-  font-size: .75rem;
-  font-style: italic;
-  font-weight: .5rem;
-  line-height: 200%;
-  text-align: center;
-  padding: .25rem 1rem;
-  margin-top: 1rem;
+@font-face {
+    font-family: ;
+    src: url();
 }

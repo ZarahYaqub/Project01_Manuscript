@@ -1,0 +1,186 @@
+Project Revision Checklist
+🔴 Priority 1 — Structure & Semantics (HTML)
+
+ Add a single, clear <h1> to each page
+
+ Ensure full document structure exists:
+
+ <html> tag present
+
+ <head> and <body> properly nested
+
+ Replace non-semantic divs with semantic elements:
+
+ <main>
+
+ <section>
+
+ <article>
+
+ <nav>
+
+ Remove unnecessary <hgroup> usage
+
+ Fix incorrect nesting (e.g. h3 > p)
+
+ Replace <b> tags used for styling with:
+
+ <strong> where meaning is importance
+
+ <em> where meaning is emphasis
+
+ Replace div.button with native <button>
+
+ Audit every element and confirm its semantic purpose
+
+🔴 Priority 2 — CSS Fundamentals & Code Quality
+
+ Choose spaces only (no tabs) for indentation
+
+ Re-indent entire CSS file consistently
+
+ Remove unnecessary or duplicated CSS rules
+
+ Refactor selectors to follow hierarchy:
+
+ Broad element styles first
+
+ Narrow class-based styles after
+
+ Replace all px values with relative units:
+
+ rem
+
+ em
+
+ %
+
+ Replace directional properties with logical ones:
+
+ margin-block
+
+ padding-inline
+
+ Remove any CSS property not covered in class or not fully understood
+
+ Add comments explaining non-obvious layout decisions
+
+🟠 Priority 3 — Typography & Readability
+
+ Set max line length for body text (60–70ch)
+
+ Increase vertical spacing between:
+
+ Paragraphs
+
+ Headings and body text
+
+ Major sections
+
+ Normalize spacing for h3 + p combinations
+
+ Reduce visual dominance of blockquotes:
+
+ Smaller type size
+
+ Reduced padding
+
+ Lower contrast
+
+ Ensure consistent text alignment across:
+
+ Headers
+
+ Metadata
+
+ Body content
+
+🟠 Priority 4 — Layout & Alignment
+
+ Define a consistent alignment system per section
+
+ Align headers, metadata, and body text to shared vertical axes
+
+ Remove one-off margin/padding hacks
+
+ Use grid or flexbox intentionally (not spacing nudges)
+
+ Check for unintentional alignment shifts across viewports
+
+🟡 Priority 5 — Visual System & Cohesion
+
+ Define a cohesive “retro” visual system beyond typography:
+
+ Color palette
+
+ Borders / frames
+
+ Shadows or depth rules
+
+ Apply visual rules consistently across:
+
+ Headers
+
+ Navigation
+
+ Buttons
+
+ Blockquotes / callouts
+
+ Remove decorative elements that don’t follow system rules
+
+ Ensure each visual motif appears in multiple places
+
+ Confirm retro identity survives even without the pixel font
+
+🟡 Priority 6 — UI Patterns & Affordances
+
+ Audit borrowed UI paradigms (email / desktop UI)
+
+ Restore expected behaviors for known patterns
+
+ Visually differentiate:
+
+ External links vs anchor links
+
+ Navigation vs content links
+
+ Add clear affordances:
+
+ Hover states
+
+ Focus states
+
+ Icons where appropriate
+
+ Ensure “things that look the same behave the same”
+
+🟢 Priority 7 — “Return to Top” Button (System Integration)
+
+ Introduce the button’s visual language earlier in the page
+
+ Reuse its style for other buttons or controls
+
+ Improve interaction animation:
+
+ Button translates downward on click
+
+ Shadow recedes rather than rises
+
+ Treat the button as a reusable UI component
+
+🟢 Priority 8 — Evidence of Understanding
+
+ Rebuild one section entirely from scratch
+
+ Use fewer techniques, but apply them intentionally
+
+ Remove any “extra” properties not taught in class
+
+ Confirm ability to explain:
+
+ Every HTML tag choice
+
+ Every CSS property used
+
+ Prioritize clarity and system thinking over polish
