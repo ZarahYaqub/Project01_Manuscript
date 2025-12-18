@@ -30,6 +30,11 @@
 	--border: 0.125rem solid var(--color-mint);
 }
 
+
+	html {
+		text-wrap: pretty; 
+	}
+
 /* GLOBAL */
 *,
 *::before,
@@ -374,8 +379,9 @@ a {
 }
 
 /* TABLET+ */
-@media (min-width: 48rem) {
+@media (min-width: 790px) {
 	body {
+		line-height: 2rem;
 		padding: var(--space-2) var(--space-3);
 	}
 
@@ -434,7 +440,7 @@ a {
 }
 
 /* DESKTOP+ */
-@media (min-width: 64rem) {
+@media (min-width: 790px) {
 	.hero {
 		padding: 0 var(--space-4) var(--space-4);
 	}
@@ -448,5 +454,13 @@ a {
 
 	#reading p.call-out {
 		padding: var(--space-5) 0;
+	}
+}
+
+@media (min-width: 1024px) {
+	:root {
+		--size-body: 1rem;
+		--size-h3: 4rem;
+		--size-h2: 6rem;
 	}
 }
