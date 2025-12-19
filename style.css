@@ -54,7 +54,7 @@ body {
 a {
 	color: var(--color-mint);
 	text-decoration: underline dotted;
-	text-underline-offset:.5rem;
+	text-underline-offset: .5rem;
 }
 
 /* LAYOUT */
@@ -564,10 +564,9 @@ a {
 		max-width: none;
 		padding-bottom: 200px;
 	}
-
 }
 
-/* QUOTES (match Figma: card hugs content + caption inside) */
+
 .quote {
 	display: grid;
 	place-items: center;
@@ -575,7 +574,6 @@ a {
 	margin: 0;
 }
 
-/* Put the box + caption in the same grid cell (caption appears "inside") */
 .quote-box,
 .quote figcaption {
 	grid-area: 1 / 1;
