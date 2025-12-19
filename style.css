@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Jersey+10&display=swap');
+
 /* ROOT TOKENS */
 :root {
 	--color-black: #000000;
@@ -31,9 +33,9 @@
 }
 
 
-	html {
-		text-wrap: pretty; 
-	}
+html {
+	text-wrap: pretty;
+}
 
 /* GLOBAL */
 *,
@@ -51,6 +53,8 @@ body {
 
 a {
 	color: var(--color-mint);
+	text-decoration: underline dotted;
+	text-underline-offset:.5rem;
 }
 
 /* LAYOUT */
@@ -205,7 +209,8 @@ a {
 	font-size: var(--size-h2);
 	font-weight: var(--weight-regular);
 	text-transform: uppercase;
-	margin: 0;
+	/* margin: 0; */
+	margin-top: var(--space-2);
 	padding: var(--space-3) var(--space-2);
 }
 
@@ -219,6 +224,7 @@ a {
 	text-transform: uppercase;
 	margin: 0;
 	padding: var(--space-3) var(--space-2) var(--space-2);
+	line-height: 0.95;
 }
 
 /* BODY TEXT */
@@ -228,7 +234,8 @@ a {
 	font-size: var(--size-body);
 	margin: 0 auto;
 	max-width: var(--measure);
-	padding: var(--space-3) var(--space-2) 0;
+	padding-top: 50px;
+	padding-left: 30px;
 }
 
 /* Q SECTIONS (PADDING THAT YOU CAN SEE) */
@@ -242,8 +249,10 @@ a {
 	font-size: var(--size-h2);
 	text-align: center;
 	margin: 0;
-	padding: var(--space-5) var(--space-2);
+	padding-top: -20px;
+	;
 	max-width: none;
+	padding-bottom: 40px;
 }
 
 /* QUOTES */
@@ -265,32 +274,12 @@ a {
 
 .quote-box p {
 	font-family: var(--font-display);
-	font-size: clamp(1.75rem, 5vw, 3.125rem);
-	line-height: 1.1;
+	/* font-size: clamp(1.8rem, 3.4vw, 3rem); */
+	color: var(--color-mint);
 	text-align: center;
 	margin: 0;
-	color: var(--color-mint);
+	line-height: 1.1;
 	padding: 0;
-}
-
-.quote-box::before,
-.quote-box::after {
-	position: absolute;
-	font-family: var(--font-display);
-	font-size: clamp(4rem, 10vw, 7.5rem);
-	color: var(--color-mint);
-}
-
-.quote-box::before {
-	content: "“";
-	top: -2.25rem;
-	left: -1rem;
-}
-
-.quote-box::after {
-	content: "”";
-	bottom: -3rem;
-	right: -1rem;
 }
 
 .quote figcaption {
@@ -300,6 +289,10 @@ a {
 	text-align: center;
 }
 
+#author-name {
+	padding-top: 3rem;
+}
+
 /* BOTTOM NAV (MOBILE = STACKED) */
 #bottom-nav {
 	background: var(--color-mint);
@@ -307,13 +300,14 @@ a {
 	grid-template-columns: 1fr;
 	gap: var(--space-1);
 	padding: var(--space-2);
+	padding-bottom: var(--space-3);
 }
 
 #bottom-nav .footnotes,
 #bottom-nav .find {
 	background: var(--color-black);
 	border: var(--border);
-	padding: var(--space-2);
+	padding: var(--space-4);
 }
 
 #bottom-nav h3 {
@@ -424,12 +418,15 @@ a {
 
 	#bottom-nav {
 		grid-template-columns: 1fr 1fr;
-		padding: var(--space-3) var(--space-1);
+		padding: var(--space-1) var(--space-1);
 	}
 
 	#bottom-nav .footnotes,
 	#bottom-nav .find {
 		padding: var(--space-3);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	#bottom-nav .find .btn {
@@ -437,30 +434,196 @@ a {
 		min-height: 4.75rem;
 		padding: 0 var(--space-4);
 	}
-}
 
-/* DESKTOP+ */
-@media (min-width: 790px) {
+	.quote-box,
+	.quote figcaption {
+		grid-area: 1 / 1;
+	}
+
+	.quote-box {
+		position: relative;
+		border: var(--border);
+
+		/* shrink-wrap like Figma */
+		width: fit-content;
+		max-width: min(42rem, 100%);
+
+		padding: var(--space-4) var(--space-4);
+		padding-bottom: calc(var(--space-4) + 2rem);
+		/* room for caption inside */
+	}
+
+	.quote-box p {
+		font-family: var(--font-display);
+		font-size: clamp(1.8rem, 3.4vw, 3rem);
+		color: var(--color-mint);
+		text-align: center;
+		margin: 0;
+	}
+
+	#reading p,
+	#response p {
+		padding-top: 40px;
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+
+	#reading h3 {
+		background: var(--color-mint);
+		color: var(--color-black);
+		font-family: var(--font-display);
+		font-size: var(--size-h3);
+		font-weight: var(--weight-regular);
+		text-transform: uppercase;
+		margin: 0;
+		padding: var(--space-3) var(--space-2) var(--space-2);
+		line-height: 0.95;
+	}
+
+	.top_para {
+		padding-top: 20px;
+	}
+
 	.hero {
 		padding: 0 var(--space-4) var(--space-4);
 	}
 
 	#reading p,
 	#response p {
-		padding-top: var(--space-4);
+		padding-top: 20px;
 		padding-left: 0;
 		padding-right: 0;
+
 	}
 
 	#reading p.call-out {
-		padding: var(--space-5) 0;
+		padding: var(--space-4) 0;
 	}
+
+	.title {
+		white-space: nowrap;
+		line-height: 0.95;
+	}
+
+	.controller {
+		align-content: center;
+	}
+
+	/* FORCE the controller panel to center its contents */
+	.controller-panel {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.controller {
+		min-height: unset;
+		min-height: 18rem;
+		place-items: center;
+		column-gap: 3rem;
+	}
+
+	.quote figcaption {
+		justify-self: center;
+		padding-bottom: var(--space-2);
+		font-family: var(--font-body);
+		font-size: var(--size-small);
+		text-align: center;
+		z-index: 2;
+		margin-bottom: .5rem;
+	}
+
+	.title {
+		margin-bottom: 0;
+	}
+
+	.meta {
+		margin-top: 0;
+		padding-top: 0.5rem;
+	}
+
+	#bottom-nav h3 {
+		line-height: 0.9;
+		margin-bottom: var(--space-1);
+		align-items: center;
+	}
+
+	#response p:last-of-type {
+		padding-top: var(--space-1);
+		padding-bottom: var(--space-4);
+	}
+
+	/* CALLOUT */
+	#reading p.call-out {
+		font-family: var(--font-display);
+		font-size: var(--size-h2);
+		text-align: center;
+		margin: 0;
+		padding-top: -20px;
+		max-width: none;
+		padding-bottom: 200px;
+	}
+
 }
 
-@media (min-width: 1024px) {
-	:root {
-		--size-body: 1rem;
-		--size-h3: 4rem;
-		--size-h2: 6rem;
-	}
+/* QUOTES (match Figma: card hugs content + caption inside) */
+.quote {
+	display: grid;
+	place-items: center;
+	padding: var(--space-5) var(--space-2);
+	margin: 0;
+}
+
+/* Put the box + caption in the same grid cell (caption appears "inside") */
+.quote-box,
+.quote figcaption {
+	grid-area: 1 / 1;
+}
+
+.quote-box {
+	position: relative;
+	border: var(--border);
+
+	width: fit-content;
+	max-width: min(42rem, 100%);
+	padding: var(--space-4) var(--space-4);
+	padding-bottom: calc(var(--space-4) + 5rem);
+}
+
+.quote-box p {
+	font-family: var(--font-display);
+	font-size: clamp(1.8rem, 3.4vw, 3rem);
+	color: var(--color-mint);
+	text-align: center;
+	margin: 0;
+}
+
+/* caption INSIDE the box */
+.quote figcaption {
+	justify-self: center;
+	padding-bottom: var(--space-2);
+	font-family: var(--font-body);
+	font-size: var(--size-small);
+	text-align: center;
+	z-index: 2;
+	margin-top: 120px;
+}
+
+#response .quote p {
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
+	font-family: var(--font-display);
+	color: var(--color-mint);
+}
+
+#reading .quote p {
+	font-size: clamp(1.5rem, 3vw, 2.5rem);
+	font-family: var(--font-display);
+	color: var(--color-mint);
+	margin-top: -5px;
+}
+
+#response p:last-of-type {
+	padding-top: var(--space-0);
+	padding-bottom: var(--space-4);
 }

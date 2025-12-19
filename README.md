@@ -13,21 +13,8 @@ The reading follows Kat Holmes as she discovers and shares the secrets and conve
 Link to [Sketches](https://www.figma.com/design/iSSaMcdVsYeC0IZU5nuRFF/Zarah?node-id=3-2&t=Uu1KrKu1WH3FMs7P-1)
 Link to [Reflection](https://docs.google.com/document/d/1L-caxo4U45VAMO3p2Qu5mg2cH_z09breYsH33ESd57k/edit?usp=sharing)
 
-### Semantic Dom
-nesting! You can have more than one tag on a piece of text. Imagine how the text will be read, beyond just its layout. What parts do you want to emphasise, to pull out to the reader? Think of it similarly to reading a news article online.
+## Type Licences
 
-### Stylesd Markup 
-Don't get too attached to your initial design, as it may not translate well; be open to changes 
-
-### Spacing and Refinement
-whitepace!!
-
-Important Shortcuts
-cmd+shift+P ---> wrap with abriviation
-cmd+/ ----> disable 
-pdf of VSC shortcuts
-
-Note: the italics are broken
 
 
 
